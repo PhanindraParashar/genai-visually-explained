@@ -1,0 +1,5 @@
+{
+  "name": "LLM Inside Out",
+  "description": "An interactive, animated educational platform for teenagers to understand how Large Language Models work, covering token prediction, pre-training, fine-tuning, and system prompts.",
+  "requestFramePermissions": []
+}
