@@ -1,4 +1,4 @@
-export type LessonId = 'intro' | 'prediction' | 'pretraining' | 'finetuning' | 'systemprompt' | 'attention';
+export type LessonId = 'intro' | 'prediction' | 'embeddings' | 'pretraining' | 'finetuning' | 'systemprompt' | 'attention' | 'context' | 'hallucination';
 
 export interface LessonConfig {
   id: LessonId;
@@ -8,7 +8,7 @@ export interface LessonConfig {
 }
 
 export interface ChatMessage {
-  role: 'user' | 'model';
+  role: 'user' | 'model' | 'system';
   text: string;
   isError?: boolean;
 }
@@ -25,5 +25,8 @@ export enum RobotMood {
   TEACHER = 'teacher',
   PIRATE = 'pirate',
   DETECTIVE = 'detective',
-  THINKING = 'thinking'
+  THINKING = 'thinking',
+  DOCTOR = 'doctor',
+  BANKER = 'banker',
+  SLEEPY = 'sleepy'
 }
